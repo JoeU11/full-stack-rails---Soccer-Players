@@ -1,0 +1,13 @@
+<h1>Welcome to the edit page </h1>
+
+
+<html>
+<form action=<%="/players/#{@player.id}"%> method="patch">
+<input type="hidden" name="_method" value="patch" />
+<p>Name: <input type="text" name="name" value=<%=@player.name%>></p>
+<p>Team: <input type="text" name="team" value=<%=@player.team%>></p>
+<p>Number: <input type="number" name="number" value=<%=@player.number%>></p>
+<p>Image URL: <input type="text" name="image" value=<%=@player.image%>></p>
+<input type="submit">
+</form>
+<html>

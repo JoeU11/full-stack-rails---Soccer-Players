@@ -1,0 +1,16 @@
+<h1>Welcome to the soccer players app</h1>
+
+<% @players.each do |player| %>
+<p>Name: <%= player.name %> <br/>
+Team: <%= player.team %> <br/>
+Number: <%= player.number %> <br/>
+<a href=<%="/players/#{player.id}"%>><img id="photo" src=<%= player.image %>></a>
+</p>
+
+<%end%>
+
+<style>
+#photo {
+  width: 200px
+}
+</style>
